@@ -1,0 +1,90 @@
+/* Đặt kiểu chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container chính */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+/* Phần nội dung chính */
+.content {
+    overflow: auto;
+    padding: 20px 0;
+}
+
+/* Các phần thông tin - sử dụng float để bố trí */
+.profile,
+.subject,
+.assignments {
+    width: 30%;
+    float: left;
+    margin-right: 3.33%;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile:last-child {
+    margin-right: 0;
+}
+
+/* Tiêu đề của các phần */
+.profile h2,
+.subject h2,
+.assignments h2 {
+    color: #0056b3;
+}
+
+/* Định dạng cho danh sách bài tập */
+.assignments ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.assignments li {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #ddd;
+    margin-top: 20px;
+    color: #555;
+}
+
+/* Xóa float khi trên thiết bị nhỏ hơn */
+@media (max-width: 768px) {
+
+    .profile,
+    .subject,
+    .assignments {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+    }
+}
